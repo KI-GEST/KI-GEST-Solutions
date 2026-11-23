@@ -1,3 +1,11 @@
+Nouveautes de la version 2026.11.23 :
+
+- Encaissements / Retenue a la source client : prise en charge des retenues client (Art. 52 IRPP/IS) liees aux encaissements, avec calcul net (montant - RS), reference certificat, statut, impression du certificat recu client, et suivi dans le module Reglements > Retenues a la source.
+- Retenues a la source : page scindee en deux sections Fournisseurs / Clients ; ajout direct, modification, consultation et validation des RS client depuis cette page (compteur RS partage fournisseur/client).
+- Encaissements : ajout de la colonne "Total retenue" dans la liste et suppression de la colonne "RS" redondante ; mise en page du tableau corrigee.
+- Retenues client recues : filtre dates par defaut initialise sur le mois en cours (1er jour - dernier jour).
+- Base de donnees : nouvelle table RetenuesSourceClients ajoutee via schema de mise a jour idempotent (mise a jour automatique au demarrage / installation).
+- Cache-busting : 2026.11.23
 Nouveautes de la version 2026.11.12.3 :
 
 Impayes : une facture partiellement encaissee apparait DESORMAIS dans « Impayes clients et fournisseurs » avec le reste du. Avant, la tranche a venir annoncee sur l'encaissement (montant restant + prochaine date de paiement) etait deduite de la dette : la ligne disparaissait completement alors que le tiers devait toujours. La colonne « Planifie » indique la part deja programmee, la colonne « Reste » la dette reelle.
