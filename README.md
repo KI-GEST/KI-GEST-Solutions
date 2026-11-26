@@ -1,3 +1,12 @@
+Nouveautes de la version 2026.11.25.5 :
+
+- Correctif : erreur 500 (SqlNullValueException) possible au demarrage/session quand une colonne utilisateur est NULL ; middleware licence/session rendu tolerant.
+- Notification de mise a jour : affichage en rouge et obligatoire (sans bouton Plus tard/Fermer).
+- Publication package (ZIP + manifest) sans assets delta .bin.
+- Installeur Poste local (Hub) : bouton "Tester la connexion SQL" et ajustement de la mise en page.
+- Mise a jour SQL : application du schema idempotent (tables/champs manquants) lors des mises a jour.
+- Cache-busting : 2026.11.25.5
+
 Nouveautes de la version 2026.11.25.4 :
 
 - Notification de mise a jour : affichage en rouge et obligatoire (sans bouton Plus tard/Fermer).
